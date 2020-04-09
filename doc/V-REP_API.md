@@ -2,7 +2,7 @@
 
 V-REP is a robot simulator, with integrated development environment. It is based on a distributed control architecture: each object/model can be individually controlled via an embedded script, a plugin, ROS nodes, BlueZero nodes, remote API clients, or a custom solution. This makes V-REP very versatile and ideal for multi-robot applications. Controllers can be written in C/C++, Python, Java, Lua, Matlab, Octave or Urbi.
 
-In V-REP there are Pure shapes which have dynamics and physics, and Regular shapes which are just a mesh (the skeleton of a shape). When building a new model, first, we handle only the visual aspect of it (we want it to look right). The dynamic aspect: its underlying model of how it works, joints, sensors, etc. will be handled at a later stage. Go through the following tutorials to understand the basics of robot modeling in V-REP: [Tutorails](http://www.coppeliarobotics.com/helpFiles/en/tutorials.htm).
+In V-REP there are Pure shapes which have dynamics and physics, and Regular shapes which are just a mesh (the skeleton of a shape). When building a new model, first, we handle only the visual aspect of it (we want it to look right). The dynamic aspect: its underlying model of how it works, joints, sensors, etc. will be handled at a later stage. Go through the following tutorials to understand the basics of robot modeling in V-REP: [Tutorials](http://www.coppeliarobotics.com/helpFiles/en/tutorials.htm).
 
 # Controlling your robot with Python
 
@@ -46,7 +46,7 @@ Switch to Python. Open a new file and immediately save it to your working direct
 
 And execute the program. You should see “Connected to remote API server” on the screen. You have effectively established communication with the scene.
 
-## Controling the Robot
+## Controlling the Robot
 
 We will make the robot move by accessing its motors. For this we need a handle to control each individual motor. The function vrep.simxGetObjectHandle will return an error code and a handle to an object. Add the following to the code to obtain a handle to both motors of the robot.
 
